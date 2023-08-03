@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+button{
+  border: none;
+  outline: none;
+}
+button:hover{
+  cursor: pointer;
+}
+
+
+
+
+.minibar{
+    width: 100%;
+}
+
+body, a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+body{
+    background-color: #fcfdff;
+    font-family: 'Asap', sans-serif;
+}
+
+
+.login-header{
+    padding: 0;
+    padding-top: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 6rem;
+    margin-bottom: 40px;
+
+    .login-logo-text{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+
+        #login-logo{
+            font-size: 1.5rem;
+            text-align: center;
+            margin-right: 0.5rem;
+
+            span{
+                color: #118AB2;
+            }           
+        }
+
+        #login-title{
+            margin: 1rem 0;
+            font-size: 2.25rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.login-card{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    width: 450px;
+    background-color: white;
+    padding: 20px 40px 0px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 0px #21252956;
+
+    .card-title{
+        padding: 10px 0;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .card-input{
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+
+        input{
+            font-family: 'Asap', sans-serif;
+            margin-top: 5px;
+            padding: 5px 8px;
+            border: none;
+            background-color: #E9ECEF;
+            border-radius: 3px;            
+        }
+        input:focus{
+            outline: 3px solid #2a9d904e;
+        }
+    }
+
+    .other-input{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+
+        .remember{
+            display: flex;
+            align-items: center;
+
+            label, input{
+                margin-left: 5px;
+                cursor: pointer;                
+            }            
+        }
+        a{
+            color: #2A9D8F;
+            font-weight: 500;
+        }
+        a:hover{
+            color: #238176;
+        }
+    }
+
+    .error-message{
+        background-color: #2a9d9027;
+        color: #eb0b1a;
+        padding: 15px 10px;
+        border-left: 3px solid #d11320;
+        font-weight: 500;
+    }
+
+    .card-button{
+        background-color: #2A9D8F;
+        color: white;
+        display: block;
+        width: 100%;
+        padding: 7px 0;
+        font-weight: 500;
+        font-size: 1.01rem;
+        border-radius: 8px;
+    }
+
+    .card-footer{
+        padding: 20px 0;
+        text-align: center;
+
+        a{
+            color: #2A9D8F;
+        }
+    }
+}
+
+.login-card::before{
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #2A9D8F;
+}
+
+.total{
+    display: flex;
+    
+    input{
+        display: block;
+        width: 50px;
+        text-align: center;
+        background-color: none;
+        background: none;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    input:focus{
+        outline: none;
+        border: none;
+    }
+
+    button{
+        background: none;
+    }
+}
+
+.error-msg{
+    font-size: 0.85rem;
+    margin-top: 3px;
+    color: #d11320;
+    font-weight: 500;
+    margin-left: 1px;
+}
+
+.input-desc{
+    font-size: 0.80rem;
+    margin-top: 3px;
+    color: #6c757d;
+    margin-left: 1px;
+}
